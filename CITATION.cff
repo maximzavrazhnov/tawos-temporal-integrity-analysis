@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this package, please cite the associated manuscript and this repository."
+title: "TAWOS Temporal Integrity Analysis — Reproducibility Package"
+type: software
+authors:
+  - family-names: "Zaytsev"
+    given-names: "Andrey Aleksandrovich"
+    orcid: "https://orcid.org/0000-0002-4372-4207"
+  - family-names: "Zavrazhnov"
+    given-names: "Maxim Vyacheslavovich"
+    orcid: "https://orcid.org/0009-0000-8070-9084"
+version: "final-source-2026-08"
+date-released: 2026-10-03

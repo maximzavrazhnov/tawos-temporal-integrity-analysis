@@ -1,0 +1,2 @@
+row_count,project_count,invalid_created_after_start_share,invalid_created_after_20pct_share,invalid_resolved_before_start_share,invalid_assignee_share,invalid_sprint_change_share,stable_from_start_count,stable_after_20pct_count
+952,15,0,0,0,0,0,3,21

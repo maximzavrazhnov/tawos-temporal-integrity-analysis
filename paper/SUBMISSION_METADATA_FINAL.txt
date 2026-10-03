@@ -1,0 +1,48 @@
+МЕТАДАННЫЕ ДЛЯ ПОДАЧИ В ЖУРНАЛ «БИЗНЕС-ИНФОРМАТИКА»
+Проверено и подготовлено: 11.08.2026
+
+РУССКИЙ БЛОК
+
+Название:
+Временная состоятельность цифровых следов в аналитике проектных команд: риск информационной утечки и межпроектная переносимость моделей
+
+Авторы:
+Зайцев Андрей Александрович
+E-mail: andrey_z7@mail.ru
+ORCID: 0000-0002-4372-4207
+
+Завражнов Максим Вячеславович
+E-mail: mr.megazavr13@mail.ru
+ORCID: 0009-0000-8070-9084
+
+Аффилиация:
+Федеральное государственное автономное образовательное учреждение высшего образования «Санкт-Петербургский политехнический университет Петра Великого», 195251, г. Санкт-Петербург, ул. Политехническая, д. 29, литера Б, Россия
+
+Аннотация:
+Цифровые следы корпоративных информационных систем используются для прогнозирования проектных результатов, однако ретроспективные выгрузки могут содержать значения, отсутствовавшие в момент решения. В существующих исследованиях временная доступность признаков и переносимость вероятностных моделей обычно рассматриваются раздельно. Цель работы — разработать и эмпирически проверить метод оценки временной состоятельности цифровых следов проектных команд. На базе TAWOS v1.1 сформирована выборка из 952 спринтов 15 проектов (23 661 задача). Для начала спринта и горизонта 20% его плановой продолжительности рассчитаны показатели позднего создания задач, смены исполнителей, изменения принадлежности спринту и ранее разрешенных задач. Сопоставлены три L₂-регуляризованные логистические модели: контекста и истории, ранних событий и итогового ретроспективного снимка. Применены временной holdout, парный bootstrap и Leave-One-Project-Out. После начала спринта создавалось в среднем 39,43% задач итогового состава, у 33,97% менялся исполнитель, у 44,71% — принадлежность спринту. Ретроспективная модель имела наибольшую точечную ROC-AUC во временном тесте, но не показала устойчивого преимущества по совокупности метрик. В Leave-One-Project-Out ее объединенная ROC-AUC составила 0,4790; взвешенная по внутрипроектным парам ROC-AUC — 0,6782, межпроектная — 0,4590 при высокой проектной неопределенности. Результаты указывают на необходимость раздельно проверять point-in-time допустимость признаков, внутрипроектное ранжирование, калибровку и межпроектную переносимость. Предложен воспроизводимый протокол подготовки данных для систем поддержки управленческих решений.
+
+Ключевые слова:
+проектные команды; цифровые следы; временная состоятельность; информационная утечка; прогнозная аналитика; калибровка вероятностей; межпроектная переносимость; поддержка управленческих решений.
+
+ENGLISH BLOCK
+
+Title:
+Temporal Integrity of Digital Traces in Project Team Analytics: Risk of Information Leakage and Cross-Project Model Transferability
+
+Authors:
+Andrey Aleksandrovich Zaytsev
+E-mail: andrey_z7@mail.ru
+ORCID: 0000-0002-4372-4207
+
+Maxim Vyacheslavovich Zavrazhnov
+E-mail: mr.megazavr13@mail.ru
+ORCID: TO BE ADDED BEFORE SUBMISSION
+
+Affiliation:
+Peter the Great St. Petersburg Polytechnic University, 29 Polytechnicheskaya St., St. Petersburg, 195251, Russia
+
+Abstract:
+Digital traces from corporate information systems are widely used in project analytics, but retrospective extracts may contain values that were unavailable at the decision point. Existing studies usually examine temporal feature availability and cross-project transferability separately. This study develops and evaluates a method for assessing the temporal integrity of project-team digital traces. Using TAWOS v1.1, we analyzed 952 sprints from 15 projects (23,661 issues). Indicators of late issue creation, assignee changes, sprint-scope changes, and issues resolved before sprint start were calculated at sprint start and at 20% of planned duration. Three L2-regularized logistic models were compared: context and history, early events, and a retrospective final snapshot. Evaluation used temporal holdout, paired bootstrap, and Leave-One-Project-Out. On average, 39.43% of final-sprint issues were created after sprint start, 33.97% changed assignee, and 44.71% changed sprint membership. The retrospective model had the highest point ROC-AUC in the temporal test but no robust overall advantage. Under Leave-One-Project-Out, its pooled ROC-AUC was 0.4790, whereas pair-weighted within-project ROC-AUC was 0.6782 and cross-project-pair ROC-AUC was 0.4590 with substantial project-level uncertainty. The results show that point-in-time feature admissibility, within-project ranking, calibration, and probability-scale transferability should be assessed separately. A reproducible data-preparation and validation protocol for management decision-support systems is proposed.
+
+Key words:
+project teams; digital traces; temporal integrity; information leakage; predictive analytics; probability calibration; cross-project transferability; management decision support.

@@ -1,0 +1,9 @@
+Python: 3.12.13
+NumPy: 2.0.2
+pandas: 2.2.2
+SciPy: 1.16.3
+scikit-learn: 1.6.1
+statsmodels: 0.14.6
+
+Основной вычислительный пакет исходного анализа выполнялся в Google Colab.
+Для воспроизведения дополнительного notebook требуются также Jupyter/IPython.
