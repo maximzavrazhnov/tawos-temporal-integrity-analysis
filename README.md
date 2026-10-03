@@ -1,21 +1,19 @@
 # TAWOS Temporal Integrity Analysis — Final Reproducibility Repository
 
-Final GitHub-ready package synchronized to the submitted manuscript:
+Package synchronized to the submitted manuscript:
 
 **“Temporal Integrity of Digital Traces in Project Team Analytics: Risk of Information Leakage and Cross-Project Model Transferability”**  
 Russian title: **«Временная состоятельность цифровых следов в аналитике проектных команд: риск информационной утечки и межпроектная переносимость моделей»**.
-
-This repository is rebuilt from the **final S1–S5 journal supplementary package**. Unlike the earlier draft, it contains the recovered upstream SQL workflow, the final derivative datasets, the executed reproducibility notebook and environment, the variable dictionary, and the extended validation checks.
 
 ## Repository structure
 
 ```text
 .
 ├── S1_SQL/                         # raw TAWOS -> analytical cohort -> temporal-integrity exports
-├── S2_variable_dictionary.xlsx    # lineage / dictionary for 50 modeling variables
+├── S2_variable_dictionary.xlsx     # lineage / dictionary for 50 modeling variables
 ├── S3_data/                        # final derivative datasets used by the analysis
 ├── S4_analysis/                    # executed reproducibility notebook + exact environment
-├── S5_extended_checks.xlsx        # sensitivity, LOPO, baselines, uncertainty, LORO
+├── S5_extended_checks.xlsx         # sensitivity, LOPO, baselines, uncertainty, LORO
 ├── paper/                          # final submission metadata (manuscript itself is not duplicated)
 ├── requirements.txt
 └── CITATION.cff
@@ -35,7 +33,7 @@ Temporal-integrity diagnostics show that, relative to the final sprint issue set
 
 ## Validation interpretation
 
-Three L2-regularized logistic models compare context/history information, early events, and the retrospective final snapshot. The retrospective specification has the highest point ROC-AUC in the temporal holdout, but it does **not** show a robust overall advantage across discrimination and probabilistic metrics.
+Three L2-regularized logistic models compare context/history information, early events, and the retrospective final snapshot. The retrospective specification has the highest point ROC-AUC in the temporal holdout.
 
 Under Leave-One-Project-Out, the retrospective model reports:
 
@@ -54,7 +52,6 @@ The study therefore separates point-in-time admissibility, within-project rankin
    - `15_build_temporal_integrity.sql`.
 4. Compare the resulting counts with the verification outputs and expected checkpoints in `S1_SQL/`.
 
-The upstream cohort-building SQL was recovered from the authors' **MySQL Workbench execution history dated 2026-07-21**; it was not reconstructed from manuscript prose.
 
 ## Reproduce the statistical analysis from final derivative data
 
@@ -80,12 +77,12 @@ The archived environment is:
 
 ## Important methodological limitation
 
-Temporal-integrity indicators are evaluated relative to the **observed final sprint issue set**. They quantify how the final snapshot diverges from information available at earlier horizons; they do not recover issues that had been removed from the sprint before the final state. The final sample also remains a limited collection of public software projects and does not constitute external validation across independent organizations.
+Temporal-integrity indicators are evaluated relative to the **observed final sprint issue set**. They quantify how the final snapshot diverges from information available at earlier horizons. The final sample also remains a limited collection of public software projects.
 
 ## Manuscript status
 
-The full submitted manuscript is intentionally not duplicated in this repository. The final submission metadata are retained in `paper/`, while S1–S5 are the exact supplementary components described in the manuscript's data/code-availability section.
+The final submission metadata are retained in `paper/`, while S1–S5 are the exact supplementary components described in the manuscript's data/code-availability section.
 
 ## License
 
-No repository-level software license is granted by default. The raw TAWOS source remains governed by its own terms. Add a license for the authors' SQL, notebook and derived materials only after confirming journal, co-author and institutional requirements.
+No repository-level software license is granted by default. The raw TAWOS source remains governed by its own terms.
